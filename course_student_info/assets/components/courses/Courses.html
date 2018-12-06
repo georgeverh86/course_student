@@ -1,0 +1,75 @@
+<div id="allStudentsInfo">
+    <div id="courseActionButtons">
+        <button class="btn" id="addCourse">
+            Add course
+        </button>
+    </div>
+    <div class="modal" id="addCourseModal">
+        <div class="modal-content">
+            <form id="addCourseForm" name="addCourseFormName">
+                <div class="form-group">
+                    <input class="form-control" placeholder="Course name" id="courseNameField">
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Start date:</label>
+                    <input type="date" id="startDate" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                    <label for="endDate">End date:</label>
+                    <input type="date" id="endDate" value="2018-08-22" min="2018-01-01" max="2018-12-31">
+                </div>
+            </form>
+            <br>
+            <div>
+                <button class="btn" id="addCourseOk">
+                    Ok
+                </button>
+                <button class="btn" id="addCourseCancel">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="deleteCourseModal">
+        <div class="modal-content">
+            <div class="text-center" id="deleteCourseText">
+
+            </div>
+            <div class="row modalButtons">
+                <button class="btn" id="deleteCourseOk">
+                    Ok
+                </button>
+                <button class="btn" id="deleteCourseCancel">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+    <input type="text" id="searchId" placeholder="search" class="form-control">
+    <div id="selectarea">
+        <select name="pageElements" id="pageElements">
+            <option value=2>2</option>
+            <option value=10 selected>10</option>
+            <option value=20>20</option>
+            <option value=1000>1000</option>
+        </select>
+    </div>
+
+    <br>
+    <table id="tableMain" class="table table-striped table-bordered table-hover tablesorter">
+        <thead>
+        <tr>
+            <th id="courseIdHeader">Id</th>
+            <th id="courseNameHeader">Name</th>
+            <th id="courseStartDate">Start date</th>
+            <th id="courseEndDate">End date</th>
+            <th id="deleteCourseHeader">delete</th>
+        </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+    <div id="light-pagination" class="pagination"></div>
+</div>
+<div id="singleStudentInfo">
+</div>

@@ -1,0 +1,80 @@
+<div id="singleCourseContainer">
+    <div id="singleCourseText">
+    </div>
+    <div id="singleCourseActions">
+        <button class="btn" id="addStudenttoCourse">
+            Add student to course
+        </button>
+        <button class="btn" id="closeSingleCourse">
+            Close course
+        </button>
+
+    </div>
+
+    <div class="modal" id="addCourseToStudentModal">
+        <div class="modal-content">
+            <form id="addCourseToStudentForm" name="addCourseToStudentFormName">
+                <div class="form-group">
+                    <select class="form-control" id="selectStudents">
+                        <option value="0" disabled selected>---select student---</option>
+                    </select>
+                </div>
+            </form>
+            <br>
+            <div>
+                <button class="btn" id="addCourseToStudentOk">
+                    Ok
+                </button>
+                <button class="btn" id="addCourseToStudentCancel">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="singleCourseStudents">
+
+    </div>
+
+    <div class="modal" id="setMarkModal">
+        <div class="modal-content">
+            <form id="setMarkForm" name="setMarkFormName">
+                <div class="form-group">
+                    <select class="form-control" id="setMarkSelect">
+                        <option value="0" disabled selected>---select mark---</option>
+                        <option value="1" >1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                        <option value="4" >4</option>
+                        <option value="5" >5</option>
+                    </select>
+                </div>
+            </form>
+            <br>
+            <div>
+                <button class="btn" id="setMarkOk">
+                    Ok
+                </button>
+                <button class="btn" id="setMarkCancel">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="deleteCourseStudentModal">
+        <div class="modal-content">
+            <div class="text-center" id="deleteCourseStudentText">
+            </div>
+            <br>
+            <div>
+                <button class="btn" id="deleteCourseStudentOk">
+                    Ok
+                </button>
+                <button class="btn" id="deleteCourseStudentCancel">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
